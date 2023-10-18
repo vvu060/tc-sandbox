@@ -3,7 +3,7 @@ schema
     port: 3000
     baseURL: "http://jsonplaceholder.typicode.com"
     enableHttpCache: true
-    enableGraphiql: "/graphiql"
+    enableGraphiql: "/"
     enableQueryValidation: false
   ) {
   query: Query
