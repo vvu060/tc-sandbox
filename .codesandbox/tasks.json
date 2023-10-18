@@ -5,11 +5,11 @@
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
     "run tailcall": {
-      "name": "run tailcall",
+      "name": "run tailcall server",
       "command": "$HOME/.tailcall/bin/tc start /app/example.graphql",
       "runAtStart": true,
       "preview": {
-        "port": 8000
+        "port": 3000
       }
     }
   }
