@@ -7,10 +7,7 @@
     "run tailcall": {
       "name": "run tailcall server",
       "command": "$HOME/.tailcall/bin/tc start /app/example.graphql",
-      "runAtStart": true,
-      "preview": {
-        "port": 3000
-      }
+      "runAtStart": true
     }
   }
 }
