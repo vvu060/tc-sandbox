@@ -4,5 +4,5 @@ WORKDIR /app
 COPY ./app/. /app
 EXPOSE 8000
 RUN curl -sSL https://raw.githubusercontent.com/tailcallhq/tailcall/main/install.sh | zsh -s && \
-    echo 'export PATH="$HOME/.tailcall/bin:$PATH"' >> ~/.zshrc
-CMD /bin/zsh -c "source ~/.zshrc && tc start /app/example.graphql"
+    echo 'export PATH="$HOME/.tailcall/bin:$PATH"' >> /root/.bashrc
+CMD /bin/zsh -c "source /root/.bashrc"
