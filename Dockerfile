@@ -1,5 +1,5 @@
-FROM alpine:latest
-RUN apk add --no-cache curl bash jq
+FROM ubuntu:latest
+RUN apt-get update && apt-get install -y curl bash jq
 WORKDIR /app
 COPY ./app/. /app
 EXPOSE 8000
