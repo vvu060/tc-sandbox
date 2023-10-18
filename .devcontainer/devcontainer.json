@@ -15,7 +15,7 @@
   "forwardPorts": [3000],
   "portsAttributes": {
     "3000": {
-      "label": "graphql playground",
+      "label": "Graphiql playground",
       "onAutoForward": "openPreview"
     }
   }
