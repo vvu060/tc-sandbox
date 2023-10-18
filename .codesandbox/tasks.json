@@ -6,8 +6,11 @@
   "tasks": {
     "run tailcall": {
       "name": "run tailcall",
-      "command": "tc start /app/example.graphql",
-      "runAtStart": true
+      "command": "$HOME/.tailcall/bin/tc start /app/example.graphql",
+      "runAtStart": true,
+      "preview": {
+        "port": 8000
+      }
     }
   }
 }
