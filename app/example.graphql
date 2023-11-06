@@ -1,11 +1,12 @@
 schema
-  @server(port: 3000, enableGraphiql: true, enableQueryValidation: false, hostname: "0.0.0.0")
+  @server(port: 4000, enableGraphiql: true, enableQueryValidation: false, hostname: "0.0.0.0")
   @upstream(baseURL: "http://jsonplaceholder.typicode.com", enableHttpCache: true) {
   query: Query
 }
 
 type Query {
   posts: [Post] @http(path: "/posts")
+  comments: [Comments] @http(path: "/comments")
 }
 
 type User {
@@ -23,4 +24,12 @@ type Post {
   title: String!
   body: String!
   user: User @http(path: "/users/{{value.userId}}")
+}
+
+type Comments {
+  postId: Int!
+  id: Int!
+  name: String
+  email: String
+  body: String
 }
