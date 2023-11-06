@@ -6,7 +6,7 @@
   "tasks": {
     "run tailcall": {
       "name": "run tailcall server",
-      "command": "$HOME/.tailcall/bin/tc start /workspaces/sandbox/app/example.graphql",
+      "command": "$HOME/.tailcall/bin/tc start /workspaces/tailcall-sandbox/app/example.graphql",
       "runAtStart": true,
       "preview": {
         "port": 3000
