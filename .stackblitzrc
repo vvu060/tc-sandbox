@@ -1,4 +1,4 @@
 {
     "installDependencies": false,
-    "startCommand": "ls /workspaces/tc-sandbox/exercises/*.graphql | entr -r tailcall start $(ls /workspaces/tc-sandbox/exercises/*.graphql)"
+    "startCommand": "ls /home/vvu060/tc-sandbox/exercises/*.graphql | entr -r tailcall start $(ls /home/vvu060/tc-sandbox/exercises/*.graphql)"
   }
